@@ -1,48 +1,118 @@
+import { useEffect } from "react";
 function Skills(){
+  useEffect(() => {
+
+  const cards = document.querySelectorAll(".skill-card");
+
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+      }
+    })
+  },{threshold:0.2});
+
+  cards.forEach((card)=>{
+    observer.observe(card);
+  });
+
+},[]);
+
+useEffect(() => {
+  const elements = document.querySelectorAll(".skill-card, .text-reveal");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.3 ,rootMargin:"-100px" });
+
+  elements.forEach((el) => observer.observe(el));
+}, []);
     return(
         <div className="skill-page">
-            <div className="skill-tittle">
-                <h3>Technical<span> Skills</span></h3>
-                <p>Building scalable web solutions with strong Computer Science foundations</p>
+            <div className="skill-tittle text-reveal">
+                <h3>Technical<span> Skills</span></h3></div>
+              <div className="tittle">  <p >Building scalable web solutions with strong Computer Science foundations</p></div>
             
-            </div>
-        <div className="skill-container">
-            <div className="skill-content">
+        
+            
+        <section class="skills-section">
 
-                <h3>FRONTEND</h3>
-                <div className="skill-list">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>BootStap</p>
-                <p>JavaScript</p>
-                <p>React</p>
-                </div>
-            </div>
-             <div className="skill-content">
-                <h3>BACKEND</h3>
-                <div className="skill-list">
-                <p>Java</p>
-                <p>Node.js</p>
-                <p>Express.js</p></div>
-                </div>
-              <div className="skill-content">
-                <h3>DATABASE</h3>
-                <div className="skill-list">
-                <p>SQL</p>
-                <p>MongoDB</p>
-                </div>
+
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h3 className="frontend">Frontend</h3>
+
+<div class="skill-icons">
+
+<i class="devicon-html5-plain colored"><p>html</p></i>
+<i class="devicon-css3-plain colored"><p>css</p></i>
+<i class="devicon-bootstrap-plain colored"><p>bootstrap</p></i>
+<i class="devicon-javascript-plain colored"><p>JavaScript</p></i>
+<i class="devicon-react-original colored"><p>React</p></i>
+
 </div>
-               <div className="skill-content">
-                <h3>CORE CS</h3>
-                <div className="skill-list">
-                <p>Oops</p>
-                <p>Computer Networks</p>
-                <p>Operating System</p>
-                <p>AI</p>
-                <p>DBMS</p>
-                </div>
-               </div>
-        </div>
+
+</div>
+
+<div class="skill-card">
+
+<h3 className="backend">Backend</h3>
+
+<div class="skill-icons">
+
+<i class="devicon-java-plain colored"><p>Java</p></i>
+<i class="devicon-nodejs-plain colored"><p>Noje.js</p></i>
+<i class="devicon-express-original"><p>Express.js</p></i>
+
+</div>
+
+</div>
+
+<div class="skill-card">
+    <h3 className="database">Database</h3>
+
+  <div className="skill-icons">
+
+    <div className="icon">
+      <i className="devicon-mysql-plain colored"></i>
+      <p>SQL</p>
+    </div>
+
+    <div className="icon">
+      <i className="devicon-mongodb-plain colored"></i>
+      <p>MongoDB</p>
+    </div>
+
+  
+
+
+
+</div>
+
+<h3 className="corecs">Core CS</h3>
+
+<div class="skill-items">
+
+<span>OOP</span>
+<span>DBMS</span>
+<span>OS</span>
+<span>CN</span>
+<span>AI</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
         </div>
     )
 } export default Skills
