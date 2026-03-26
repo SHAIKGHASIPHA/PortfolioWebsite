@@ -129,8 +129,8 @@ body{
   
 min-height: 100vh;
   background:linear-gradient(rgba(1, 0, 0, 0.769), rgba(10, 1, 1, 0.735)),
- 
- url("src/assets/project-sec.jpg");
+
+  url("src/assets/project-sec.jpg"); 
   
  opacity:0.9;
   background-size: cover;

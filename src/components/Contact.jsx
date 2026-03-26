@@ -22,12 +22,12 @@ function Contact() {
                 
               </a>
 
-              <a href="https://www.linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com/in/shaik-ghasipha-a95085386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
                 <i className="fa-brands fa-linkedin"></i>
                 
               </a>
 
-              <a href="https://github.com" target="_blank">
+              <a href="https://github.com/SHAIKGHASIPHA" target="_blank">
                 <i className="fa-brands fa-github"></i>
             
               </a>
