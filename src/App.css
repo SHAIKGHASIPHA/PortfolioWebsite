@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   padding-top:80px;
 }
@@ -130,7 +133,7 @@ body{
 min-height: 100vh;
   background:linear-gradient(rgba(1, 0, 0, 0.769), rgba(10, 1, 1, 0.735)),
 
-  url("src/assets/project-sec.jpg"); 
+  url("/project-sec.jpg"); 
   
  opacity:0.9;
   background-size: cover;
@@ -663,10 +666,9 @@ font-size:14px;
 
 .skill-page {
 
-    /* linear-gradient(rgba(0, 0, 0, 0.945), rgba(0, 0, 0, 0.849)),
-    url("src/assets/Website-Image-1-scaled.jpg"); */
+  
  background:linear-gradient(rgba(1, 0, 0, 0.842), rgba(10, 1, 1, 0.811)),
- url("src/assets/project-sec.jpg"); 
+ url("/project-sec.jpg"); 
 
 
   opacity: 0.9;
@@ -964,7 +966,7 @@ font-size:14px;
 .project{
    background:linear-gradient(rgba(1, 0, 0, 0.769), rgba(10, 1, 1, 0.735)),
  
- url("src/assets/project-sec.jpg");
+ url("/project-sec.jpg");
  min-height:100vh;
  width:100%;
   opacity:0.9;
@@ -1210,7 +1212,7 @@ overflow:hidden;
   flex-direction: column;
 
   background: linear-gradient(rgba(1,0,0,0.7), rgba(10,1,1,0.7)),
-              url("src/assets/project-sec.jpg");
+              url("/project-sec.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1513,7 +1515,7 @@ margin:10px auto;
 .contact-page{
    background:linear-gradient(rgba(1, 0, 0, 0.927), rgba(10, 1, 1, 0.735)),
  
- url("src/assets/project-sec.jpg");
+ url("/project-sec.jpg");
  
  opacity:0.9;
   background-size: cover;

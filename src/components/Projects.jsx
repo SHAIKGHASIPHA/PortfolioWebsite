@@ -1,4 +1,8 @@
-import { useEffect, useState } from "react";
+ import img1 from "../assets/Screenshot (40).png";
+ import img2 from "../assets/Screenshot (45).png";
+ import img3 from "../assets/Screenshot (43).png";
+ <assets />
+ import { useEffect, useState } from "react";
 
 export default function Projects() {
 
@@ -63,7 +67,7 @@ export default function Projects() {
 
       <div className="project-container">
         <div className="project-card-new">
-          <img src="src/assets/Screenshot (40).png" alt="image" />
+          <img src={img1} alt="image" />
           <div className="card-body">
             <h3>Netflix-clone</h3>
             <p>Built a responsive Netflix UI clone with modern layout.</p>
@@ -74,9 +78,9 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* CARD 2 */}
+      
         <div className="project-card-new">
-          <img src="src/assets/Screenshot (45).png" alt="image"/>
+          <img src={img2} alt="image"/>
           <div className="card-body">
             <h3>ToDo List</h3>
             <p>User-friendly todo app with modern UI</p>
@@ -90,7 +94,7 @@ export default function Projects() {
 
         
         <div className="project-card-new">
-          <img src="src/assets/Screenshot (43).png" alt="image" />
+          <img src={img3} alt="image" />
           <div className="card-body">
             <h3>Flipkart Clone</h3>
             <p>Responsive e-commerce clone</p>
